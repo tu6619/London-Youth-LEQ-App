@@ -221,7 +221,7 @@ class Home extends React.Component {
                     {this.renderResults()}
                   </div>
                   <div className='buttonBottom'>
-                    <Button floating fab='vertical' icon='mode_edit' className='red' large style={{bottom: '45px', right: '24px'}}>
+                    <Button floating fab='vertical' icon='launch' className='red' large style={{bottom: '45px', right: '24px'}}>
                     <Button floating onClick={this.showBefore.bind(this)} className='buttonBottom'>BEFORE</Button>
                     <Button floating onClick={this.showNow.bind(this)} className='buttonBottom'>NOW</Button>
                     <Button floating onClick={this.showAll.bind(this)} className='buttonBottom'>ALL</Button>

@@ -1,0 +1,138 @@
+@import 'variables';
+.results-container {
+  margin-top: 50px;
+}
+.bubble {
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 5px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.bubble-text {
+  text-align: center;
+}
+
+.score {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 26px;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  text-transform: none;
+  background-color: #167378;
+
+  span {
+    position: relative;
+    font-size: 10px;
+    width: 90%;
+    height: 80%;
+  }
+}
+
+.modal .btn {
+  height: 37px;
+}
+
+.bubbleButton {
+  height: 3em;
+  line-height: 12px;
+}
+
+.leqSubmitButton {
+  height: 3em;
+  line-height: 12px;
+}
+
+@for $i from 1 through 8 {
+  .size-#{$i} {
+    height: 20px * $i;
+    width: 20px * $i;
+    border-radius: 10px * $i;
+  }
+  .size-#{$i} .score {
+    margin-top: (10px * $i) - 18px;
+  }
+}
+
+.leq-blue {
+  background-color: $grey-blue;
+  .score {
+    color: #fff;
+  }
+}
+
+.leq-red {
+  background-color: $pink-red;
+  .score {
+    color: #fff;
+  }
+}
+
+.leq-yellow {
+  background-color: $green-yellow;
+}
+
+.leq-teal {
+  background-color: $teal;
+  .score {
+    color: #fff;
+  }
+}
+
+.leq-orange {
+  background-color: $orange;
+  .score {
+    color: #fff;
+  }
+}
+
+.leq-purple {
+  background-color: $purple;
+  .score {
+    color: #fff;
+  }
+}
+
+.nowResults {
+  display: inline-block;
+}
+
+.beforeResults {
+  display: inline-block;
+}
+
+.upperRow {
+  display:inline-block;
+}
+
+.lowerRow {
+  display:inline-block;
+}
+
+// media queries
+
+@media only screen and (max-width: 450px) {
+  @for $i from 1 through 8 {
+    .size-#{$i} {
+      height: 10px * $i;
+      width: 10px * $i;
+      border-radius: 10px * $i;
+    }
+    .size-#{$i} .score {
+      margin-top: (5px * $i) - 18px;
+    }
+  }
+
+  .bubbleButton {
+    height: 3em;
+    line-height: 12px;
+    border-radius: 40px;
+    width: 5em;
+    padding: 0;
+  }
+}

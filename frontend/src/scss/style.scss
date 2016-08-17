@@ -1,0 +1,324 @@
+@import 'variables';
+@import 'bubbles';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: $main-font;
+  margin-bottom: $footer-height;
+  background-color: $light-blue;
+}
+
+.about h3 {
+  text-align: center;
+  margin: 2em;
+}
+
+.home {
+  text-align: center;
+}
+
+.image-container {
+  width: 80%;
+  max-width: 400px;
+  margin: 4em auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+/********************  QUESTIONNAIRE ******************/
+
+.questionnaire {
+  background-color: #4CCEDE;
+  .slick-prev {
+    left: -45px;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: #D5E739;
+    font-size: 40px;
+  }
+  .slick-initialized {
+    min-height: 85%;
+    padding: 20px 0;
+    .slick-slide {
+      padding: 20px;
+      .Qbubble {
+        border: 2px solid #D5E739;
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        margin: 0 auto 20px auto;
+        .Qnumber {
+          color: #D5E739;
+          font-weight: 700;
+          text-align: center;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+
+}
+
+.slider-label {
+  position: relative;
+  top: 10vh;
+  display: block;
+  background-color: #167378;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+
+/****************** RANGE SLIDER ***********************/
+
+// Base Colors
+$shade-10: #2c3e50 !default;
+$shade-1: #d7dcdf !default;
+$shade-0: #fff !default;
+$teal: #1abc9c !default;
+
+
+// Reset
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+
+.range-slider {
+  margin: 60px 0 0 0%;
+}
+
+
+// Range Slider
+$range-width: 100% !default;
+
+$range-handle-color: $shade-10 !default;
+$range-handle-color-hover: $teal !default;
+$range-handle-size: 20px !default;
+
+$range-track-color: $shade-1 !default;
+$range-track-height: 10px !default;
+
+$range-label-color: $shade-10 !default;
+$range-label-width: 60px !default;
+
+.range-slider {
+  width: $range-width;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (#{$range-label-width + 13px}));
+  height: $range-track-height;
+  border-radius: 5px;
+  background: $range-track-color;
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: $range-handle-size;
+    height: $range-handle-size;
+    border-radius: 50%;
+    background: $range-handle-color;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background: $range-handle-color-hover;
+    }
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: $range-handle-color-hover;
+  }
+
+  &::-moz-range-thumb {
+    width: $range-handle-size;
+    height: $range-handle-size;
+    border: 0;
+    border-radius: 50%;
+    background: $range-handle-color;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background: $range-handle-color-hover;
+    }
+  }
+
+  &:active::-moz-range-thumb {
+    background: $range-handle-color-hover;
+  }
+}
+
+
+// Range Label
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: $range-label-width;
+  color: $shade-0;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: $range-label-color;
+  padding: 5px 10px;
+  margin-left: 8px;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid $range-label-color;
+    border-bottom: 7px solid transparent;
+    content: '';
+  }
+}
+
+
+/*********************** FORM DETAIL *************************/
+
+
+// Firefox Overrides
+::-moz-range-track {
+    background: $range-track-color;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+//questionaire tab
+.hidden {
+  display: none;
+}
+.start-button {
+  width: 9em;
+  margin-top: 3em;
+}
+
+.tab {
+  background-color: #d5e739;
+}
+.tabs .tab a {
+  color: white;
+}
+
+.tabs .tab a:hover {
+  color: #4ccede;
+}
+.tabs .indicator {
+  background-color: #d5e739;
+}
+.formContainer {
+  margin-top: 3em;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #d5e739;
+    box-shadow: 0 1px 0 0 #d5e739;
+}
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #d5e739;
+}
+
+.input-field label {
+  color: white;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  border-bottom: 1px solid white;
+}
+.disability-question {
+  color: white;
+}
+
+label {
+  color: white;
+}
+.logo-container {
+  margin: none;
+  width: 100%;
+  img {
+    width: 300%;
+    height: 100%;
+  }
+}
+
+
+// about page
+
+.about-container {
+  padding: 2em;
+  height: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+
+}
+
+// buttons
+.youthButton {
+  background-color: #d5e739;
+  width: 9em;
+  padding: 0;
+}
+
+.buttonCol {
+  width: 10em;
+  display: inline-block;
+}
+
+.buttonMenu {
+  margin: inherit;
+}
+
+.buttonBottom {
+  background-color: #d5e739;
+  width: 4em;
+}
+
+// media queries
+
+// @media only screen and (max-width: 1396px) {
+//
+// }
+//
+// @media only screen and (max-width: 1296px) {
+//
+// }
+//
+// @media only screen and (max-width: 1058px) {
+//
+// }
+//
+// @media only screen and (max-width: 928px) {
+//
+// }
+//
+// @media only screen and (max-width: 734px) {
+//
+// }
+//
+// @media only screen and (max-width: 450px) {
+//
+// }

@@ -86,15 +86,15 @@ export default class Results extends React.Component {
       }
     })
 
+
     const row1 = this.rowMaker(processedResults.slice(0, 4))
     const row2 = this.rowMaker(processedResults.slice(4, results.length))
-
 
 
     return (
       <div className="results-container">
           <row>{row1}</row>
-          <row>{row2}</row>        
+          <row>{row2}</row>
       </div>
     )
   }

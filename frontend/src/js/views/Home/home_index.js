@@ -217,16 +217,18 @@ class Home extends React.Component {
                   </Row>
 
                 <div className={this.state.thirdTab}>
-                  <div className='renderResults'>
-                    {this.renderResults()}
-                  </div>
-                  <div className='buttonBottom'>
-                    <Button floating fab='vertical' icon='launch' className='red' large style={{bottom: '45px', right: '24px'}}>
-                    <Button floating onClick={this.showBefore.bind(this)} className='buttonBottom'>BEFORE</Button>
-                    <Button floating onClick={this.showNow.bind(this)} className='buttonBottom'>NOW</Button>
-                    <Button floating onClick={this.showAll.bind(this)} className='buttonBottom'>ALL</Button>
-                    </Button>
-                  </div>
+                  <Col s={10} m={10} l={10} offset='s1 m1 l1'>
+                    <div className='renderResults'>
+                      {this.renderResults()}
+                    </div>
+                  </Col>
+                  <Col s={1} m={1} l={1}>
+                    <div className='leqButtons'>
+                      <Button floating waves='light' onClick={this.showBefore.bind(this)} className='buttonBottom'>BEFORE</Button>
+                      <Button floating waves='light' onClick={this.showNow.bind(this)} className='buttonBottom'>NOW</Button>
+                      <Button floating waves='light' onClick={this.showAll.bind(this)} className='buttonBottom'>ALL</Button>
+                    </div>
+                  </Col>
                 </div>
 
                 <div className={this.state.fourthTab}>

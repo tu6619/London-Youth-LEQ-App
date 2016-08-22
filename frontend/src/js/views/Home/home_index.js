@@ -16,7 +16,7 @@ class Home extends React.Component {
       secondTab: 'hidden',
       thirdTab: 'hidden',
       fourthTab: 'hidden',
-      resultStatus: 'now',
+      resultStatus: 'before',
       buttonStatus: 'live',
       questionStatus: 'hidden',
       oldResults: {

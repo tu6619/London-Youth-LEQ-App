@@ -30,32 +30,29 @@ class Home extends React.Component {
         "Self-Confidence": 10,
       },
       results: {
-        "Time Management": 16,
-        "Social Competence": 16,
-        "Achievement Motivation": 16,
-        "Intellectual Flexibility": 16,
-        "Task Leadership": 16,
-        "Emotional Control": 16,
-        "Active Initiative": 16,
-        "Self-Confidence": 16,
+        "Time Management": 0,
+        "Social Competence": 0,
+        "Achievement Motivation": 0,
+        "Intellectual Flexibility": 0,
+        "Task Leadership": 0,
+        "Emotional Control": 0,
+        "Active Initiative": 0,
+        "Self-Confidence": 0,
       }
     }
     this.handleChange = this.handleChange.bind(this)
   }
 
   changeTabs() {
-    console.log('function run')
     this.setState({
       tab1: false,
       tab2: false,
       tab3: true,
       tab4: false
     })
-    console.log(this.state)
   }
 
   showFirstTab() {
-    console.log('first tab');
     this.setState({
       firstTab: 'live',
       secondTab: 'hidden',
@@ -160,7 +157,6 @@ class Home extends React.Component {
 
 
   render () {
-    console.log(this.state);
     return (
       <div className='container'>
         <Row>

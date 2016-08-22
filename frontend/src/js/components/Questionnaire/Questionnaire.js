@@ -121,7 +121,7 @@ export default class Questionnaire extends React.Component {
           <div className='Qbubble'>
             <div className='Qnumber'>{i + 1}</div>
           </div>
-          <h5>{question.name}</h5>
+          <h5 className='Qname'>{question.name}</h5>
           <Range changeState={this.props.changeState} leqFactor={question.factor} />
         </div>
       )

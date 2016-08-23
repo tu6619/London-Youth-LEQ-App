@@ -16,7 +16,7 @@ class Home extends React.Component {
       secondTab: 'hidden',
       thirdTab: 'hidden',
       fourthTab: 'hidden',
-      resultStatus: 'now',
+      resultStatus: 'before',
       buttonStatus: 'live',
       questionStatus: 'hidden',
       oldResults: {
@@ -30,32 +30,29 @@ class Home extends React.Component {
         "Self-Confidence": 10,
       },
       results: {
-        "Time Management": 16,
-        "Social Competence": 16,
-        "Achievement Motivation": 16,
-        "Intellectual Flexibility": 16,
-        "Task Leadership": 16,
-        "Emotional Control": 16,
-        "Active Initiative": 16,
-        "Self-Confidence": 16,
+        "Time Management": 0,
+        "Social Competence": 0,
+        "Achievement Motivation": 0,
+        "Intellectual Flexibility": 0,
+        "Task Leadership": 0,
+        "Emotional Control": 0,
+        "Active Initiative": 0,
+        "Self-Confidence": 0,
       }
     }
     this.handleChange = this.handleChange.bind(this)
   }
 
   changeTabs() {
-    console.log('function run')
     this.setState({
       tab1: false,
       tab2: false,
       tab3: true,
       tab4: false
     })
-    console.log(this.state)
   }
 
   showFirstTab() {
-    console.log('first tab');
     this.setState({
       firstTab: 'live',
       secondTab: 'hidden',
@@ -160,7 +157,6 @@ class Home extends React.Component {
 
 
   render () {
-    console.log(this.state);
     return (
       <div className='container'>
         <Row>
@@ -217,16 +213,18 @@ class Home extends React.Component {
                   </Row>
 
                 <div className={this.state.thirdTab}>
-                  <div className='renderResults'>
-                    {this.renderResults()}
-                  </div>
-                  <div className='buttonBottom'>
-                    <Button floating fab='vertical' icon='launch' className='red' large style={{bottom: '45px', right: '24px'}}>
-                    <Button floating onClick={this.showBefore.bind(this)} className='buttonBottom'>BEFORE</Button>
-                    <Button floating onClick={this.showNow.bind(this)} className='buttonBottom'>NOW</Button>
-                    <Button floating onClick={this.showAll.bind(this)} className='buttonBottom'>ALL</Button>
-                    </Button>
-                  </div>
+                  <Col s={10} m={10} l={10} offset='s1 m1 l1'>
+                    <div className='renderResults'>
+                      {this.renderResults()}
+                    </div>
+                  </Col>
+                  <Col s={1} m={1} l={1}>
+                    <div className='leqButtons'>
+                      <Button floating waves='light' onClick={this.showBefore.bind(this)} className='buttonBottom'>BEFORE</Button>
+                      <Button floating waves='light' onClick={this.showNow.bind(this)} className='buttonBottom'>NOW</Button>
+                      <Button floating waves='light' onClick={this.showAll.bind(this)} className='buttonBottom'>ALL</Button>
+                    </div>
+                  </Col>
                 </div>
 
                 <div className={this.state.fourthTab}>

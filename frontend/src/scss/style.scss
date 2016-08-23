@@ -57,7 +57,7 @@ body {
           color: #D5E739;
           font-weight: 700;
           text-align: center;
-          margin-top: 7px;
+          margin-top: 2px;
         }
       }
     }
@@ -65,9 +65,13 @@ body {
 
 }
 
+.Qname {
+  text-align: center;
+}
+
 .slider-label {
   position: relative;
-  top: 10vh;
+  top: 3vh;
   display: block;
   background-color: #167378;
   color: white;
@@ -297,6 +301,12 @@ label {
   width: 4em;
 }
 
+.leqButtons {
+  position: fixed;
+  bottom: 0;
+  padding: 0px 80px 40px;
+}
+
 // media queries
 
 // @media only screen and (max-width: 1396px) {
@@ -319,6 +329,10 @@ label {
 //
 // }
 //
-// @media only screen and (max-width: 450px) {
-//
-// }
+@media only screen and (max-width: 450px) {
+  .leqButtons {
+    position: fixed;
+    bottom: 0;
+    padding: 1px 1px 1px 1px;
+  }
+}

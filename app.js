@@ -27888,7 +27888,7 @@
 
 
 	// module
-	exports.push([module.id, ".results-container {\n  margin-top: 50px; }\n\n.bubble {\n  position: relative;\n  margin: 0 auto;\n  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 5px 14px 0 rgba(0, 0, 0, 0.12); }\n\n.bubble-text {\n  text-align: center; }\n\n.score {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  font-size: 26px; }\n\n.btn {\n  display: block;\n  margin: 10px auto;\n  text-transform: none;\n  background-color: #167378; }\n  .btn span {\n    position: relative;\n    font-size: 10px;\n    width: 90%;\n    height: 80%; }\n\n.modal .btn {\n  height: 37px; }\n\n.bubbleButton {\n  height: 3em;\n  line-height: 12px; }\n\n.leqSubmitButton {\n  height: 3em;\n  line-height: 12px; }\n\n.size-1 {\n  height: 20px;\n  width: 20px;\n  border-radius: 10px; }\n\n.size-1 .score {\n  margin-top: -8px; }\n\n.size-2 {\n  height: 40px;\n  width: 40px;\n  border-radius: 20px; }\n\n.size-2 .score {\n  margin-top: 2px; }\n\n.size-3 {\n  height: 60px;\n  width: 60px;\n  border-radius: 30px; }\n\n.size-3 .score {\n  margin-top: 12px; }\n\n.size-4 {\n  height: 80px;\n  width: 80px;\n  border-radius: 40px; }\n\n.size-4 .score {\n  margin-top: 22px; }\n\n.size-5 {\n  height: 100px;\n  width: 100px;\n  border-radius: 50px; }\n\n.size-5 .score {\n  margin-top: 32px; }\n\n.size-6 {\n  height: 120px;\n  width: 120px;\n  border-radius: 60px; }\n\n.size-6 .score {\n  margin-top: 42px; }\n\n.size-7 {\n  height: 140px;\n  width: 140px;\n  border-radius: 70px; }\n\n.size-7 .score {\n  margin-top: 52px; }\n\n.size-8 {\n  height: 160px;\n  width: 160px;\n  border-radius: 80px; }\n\n.size-8 .score {\n  margin-top: 62px; }\n\n.leq-blue {\n  background-color: #0083C3; }\n  .leq-blue .score {\n    color: #fff; }\n\n.leq-red {\n  background-color: #DB487E; }\n  .leq-red .score {\n    color: #fff; }\n\n.leq-yellow {\n  background-color: #D5E739; }\n\n.leq-teal {\n  background-color: #167378; }\n  .leq-teal .score {\n    color: #fff; }\n\n.leq-orange {\n  background-color: #FF6C2F; }\n  .leq-orange .score {\n    color: #fff; }\n\n.leq-purple {\n  background-color: #492861; }\n  .leq-purple .score {\n    color: #fff; }\n\n.nowResults {\n  display: inline-block; }\n\n.beforeResults {\n  display: inline-block; }\n\n.upperRow {\n  display: inline-block; }\n\n.lowerRow {\n  display: inline-block; }\n\n@media only screen and (max-width: 450px) {\n  .size-1 {\n    height: 10px;\n    width: 10px;\n    border-radius: 10px; }\n  .size-1 .score {\n    margin-top: -13px; }\n  .size-2 {\n    height: 20px;\n    width: 20px;\n    border-radius: 20px; }\n  .size-2 .score {\n    margin-top: -8px; }\n  .size-3 {\n    height: 30px;\n    width: 30px;\n    border-radius: 30px; }\n  .size-3 .score {\n    margin-top: -3px; }\n  .size-4 {\n    height: 40px;\n    width: 40px;\n    border-radius: 40px; }\n  .size-4 .score {\n    margin-top: 2px; }\n  .size-5 {\n    height: 50px;\n    width: 50px;\n    border-radius: 50px; }\n  .size-5 .score {\n    margin-top: 7px; }\n  .size-6 {\n    height: 60px;\n    width: 60px;\n    border-radius: 60px; }\n  .size-6 .score {\n    margin-top: 12px; }\n  .size-7 {\n    height: 70px;\n    width: 70px;\n    border-radius: 70px; }\n  .size-7 .score {\n    margin-top: 17px; }\n  .size-8 {\n    height: 80px;\n    width: 80px;\n    border-radius: 80px; }\n  .size-8 .score {\n    margin-top: 22px; }\n  .bubbleButton {\n    height: 3em;\n    line-height: 12px;\n    border-radius: 40px;\n    width: 5em;\n    padding: 0; } }\n\nhtml {\n  position: relative;\n  min-height: 100%; }\n\nbody {\n  font-family: Montserrat, Helvetica, Arial;\n  margin-bottom: 80px;\n  background-color: #4ccede; }\n\n.about h3 {\n  text-align: center;\n  margin: 2em; }\n\n.home {\n  text-align: center; }\n\n.image-container {\n  width: 80%;\n  max-width: 400px;\n  margin: 4em auto; }\n  .image-container img {\n    width: 100%; }\n\n/********************  QUESTIONNAIRE ******************/\n.questionnaire {\n  background-color: #4CCEDE; }\n  .questionnaire .slick-prev {\n    left: -45px; }\n  .questionnaire .slick-prev:before, .questionnaire .slick-next:before {\n    color: #D5E739;\n    font-size: 40px; }\n  .questionnaire .slick-initialized {\n    min-height: 85%;\n    padding: 20px 0; }\n    .questionnaire .slick-initialized .slick-slide {\n      padding: 20px; }\n      .questionnaire .slick-initialized .slick-slide .Qbubble {\n        border: 2px solid #D5E739;\n        border-radius: 50%;\n        width: 2em;\n        height: 2em;\n        margin: 0 auto 20px auto; }\n        .questionnaire .slick-initialized .slick-slide .Qbubble .Qnumber {\n          color: #D5E739;\n          font-weight: 700;\n          text-align: center;\n          margin-top: 7px; }\n\n.slider-label {\n  position: relative;\n  top: 10vh;\n  display: block;\n  background-color: #167378;\n  color: white;\n  border-radius: 3px;\n  text-align: center; }\n\n/****************** RANGE SLIDER ***********************/\n*, *:before, *:after {\n  box-sizing: border-box; }\n\n.range-slider {\n  margin: 60px 0 0 0%; }\n\n.range-slider {\n  width: 100%; }\n\n.range-slider__range {\n  -webkit-appearance: none;\n  width: calc(100% - (73px));\n  height: 10px;\n  border-radius: 5px;\n  background: #d7dcdf;\n  outline: none;\n  padding: 0;\n  margin: 0; }\n  .range-slider__range::-webkit-slider-thumb {\n    appearance: none;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2c3e50;\n    cursor: pointer;\n    transition: background .15s ease-in-out; }\n    .range-slider__range::-webkit-slider-thumb:hover {\n      background: #167378; }\n  .range-slider__range:active::-webkit-slider-thumb {\n    background: #167378; }\n  .range-slider__range::-moz-range-thumb {\n    width: 20px;\n    height: 20px;\n    border: 0;\n    border-radius: 50%;\n    background: #2c3e50;\n    cursor: pointer;\n    transition: background .15s ease-in-out; }\n    .range-slider__range::-moz-range-thumb:hover {\n      background: #167378; }\n  .range-slider__range:active::-moz-range-thumb {\n    background: #167378; }\n\n.range-slider__value {\n  display: inline-block;\n  position: relative;\n  width: 60px;\n  color: #fff;\n  line-height: 20px;\n  text-align: center;\n  border-radius: 3px;\n  background: #2c3e50;\n  padding: 5px 10px;\n  margin-left: 8px; }\n  .range-slider__value:after {\n    position: absolute;\n    top: 8px;\n    left: -7px;\n    width: 0;\n    height: 0;\n    border-top: 7px solid transparent;\n    border-right: 7px solid #2c3e50;\n    border-bottom: 7px solid transparent;\n    content: ''; }\n\n/*********************** FORM DETAIL *************************/\n::-moz-range-track {\n  background: #d7dcdf;\n  border: 0; }\n\ninput::-moz-focus-inner,\ninput::-moz-focus-outer {\n  border: 0; }\n\n.hidden {\n  display: none; }\n\n.start-button {\n  width: 9em;\n  margin-top: 3em; }\n\n.tab {\n  background-color: #d5e739; }\n\n.tabs .tab a {\n  color: white; }\n\n.tabs .tab a:hover {\n  color: #4ccede; }\n\n.tabs .indicator {\n  background-color: #d5e739; }\n\n.formContainer {\n  margin-top: 3em; }\n\ninput:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {\n  border-bottom: 1px solid #d5e739;\n  box-shadow: 0 1px 0 0 #d5e739; }\n\ninput:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {\n  color: #d5e739; }\n\n.input-field label {\n  color: white; }\n\ninput:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {\n  border-bottom: 1px solid white; }\n\n.disability-question {\n  color: white; }\n\nlabel {\n  color: white; }\n\n.logo-container {\n  margin: none;\n  width: 100%; }\n  .logo-container img {\n    width: 300%;\n    height: 100%; }\n\n.about-container {\n  padding: 2em;\n  height: 100%;\n  text-align: center;\n  color: white;\n  margin-top: 2em; }\n\n.youthButton {\n  background-color: #d5e739;\n  width: 9em;\n  padding: 0; }\n\n.buttonCol {\n  width: 10em;\n  display: inline-block; }\n\n.buttonMenu {\n  margin: inherit; }\n\n.buttonBottom {\n  background-color: #d5e739;\n  width: 4em; }\n", ""]);
+	exports.push([module.id, ".results-container {\n  margin-top: 50px; }\n\n.bubble {\n  position: relative;\n  margin: 0 auto;\n  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 5px 14px 0 rgba(0, 0, 0, 0.12); }\n\n.bubble-text {\n  text-align: center; }\n\n.score {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  font-size: 26px; }\n\n.btn {\n  display: block;\n  margin: 10px auto;\n  text-transform: none;\n  background-color: #167378; }\n  .btn span {\n    position: relative;\n    font-size: 10px;\n    width: 90%;\n    height: 80%; }\n\n.modal .btn {\n  height: 37px; }\n\n.modal {\n  height: 50% !important;\n  width: 70%; }\n\n.bubbleButton {\n  height: 3em;\n  line-height: 12px; }\n\n.leqSubmitButton {\n  height: 3em;\n  line-height: 12px; }\n\n.size-1 {\n  height: 20px;\n  width: 20px;\n  border-radius: 10px; }\n\n.size-1 .score {\n  margin-top: -8px; }\n\n.size-2 {\n  height: 40px;\n  width: 40px;\n  border-radius: 20px; }\n\n.size-2 .score {\n  margin-top: 2px; }\n\n.size-3 {\n  height: 60px;\n  width: 60px;\n  border-radius: 30px; }\n\n.size-3 .score {\n  margin-top: 12px; }\n\n.size-4 {\n  height: 80px;\n  width: 80px;\n  border-radius: 40px; }\n\n.size-4 .score {\n  margin-top: 22px; }\n\n.size-5 {\n  height: 100px;\n  width: 100px;\n  border-radius: 50px; }\n\n.size-5 .score {\n  margin-top: 32px; }\n\n.size-6 {\n  height: 120px;\n  width: 120px;\n  border-radius: 60px; }\n\n.size-6 .score {\n  margin-top: 42px; }\n\n.size-7 {\n  height: 140px;\n  width: 140px;\n  border-radius: 70px; }\n\n.size-7 .score {\n  margin-top: 52px; }\n\n.size-8 {\n  height: 160px;\n  width: 160px;\n  border-radius: 80px; }\n\n.size-8 .score {\n  margin-top: 62px; }\n\n.leq-blue {\n  background-color: #0083C3; }\n  .leq-blue .score {\n    color: #fff; }\n\n.leq-red {\n  background-color: #DB487E; }\n  .leq-red .score {\n    color: #fff; }\n\n.leq-yellow {\n  background-color: #D5E739; }\n\n.leq-teal {\n  background-color: #167378; }\n  .leq-teal .score {\n    color: #fff; }\n\n.leq-orange {\n  background-color: #FF6C2F; }\n  .leq-orange .score {\n    color: #fff; }\n\n.leq-purple {\n  background-color: #492861; }\n  .leq-purple .score {\n    color: #fff; }\n\n.nowResults {\n  display: inline-block; }\n\n.beforeResults {\n  display: inline-block; }\n\n.upperRow {\n  display: inline-block; }\n\n.lowerRow {\n  display: inline-block; }\n\n@media only screen and (max-width: 450px) {\n  .size-1 {\n    height: 10px;\n    width: 10px;\n    border-radius: 10px; }\n  .size-1 .score {\n    margin-top: -13px; }\n  .size-2 {\n    height: 20px;\n    width: 20px;\n    border-radius: 20px; }\n  .size-2 .score {\n    margin-top: -8px; }\n  .size-3 {\n    height: 30px;\n    width: 30px;\n    border-radius: 30px; }\n  .size-3 .score {\n    margin-top: -3px; }\n  .size-4 {\n    height: 40px;\n    width: 40px;\n    border-radius: 40px; }\n  .size-4 .score {\n    margin-top: 2px; }\n  .size-5 {\n    height: 50px;\n    width: 50px;\n    border-radius: 50px; }\n  .size-5 .score {\n    margin-top: 7px; }\n  .size-6 {\n    height: 60px;\n    width: 60px;\n    border-radius: 60px; }\n  .size-6 .score {\n    margin-top: 12px; }\n  .size-7 {\n    height: 70px;\n    width: 70px;\n    border-radius: 70px; }\n  .size-7 .score {\n    margin-top: 17px; }\n  .size-8 {\n    height: 80px;\n    width: 80px;\n    border-radius: 80px; }\n  .size-8 .score {\n    margin-top: 22px; }\n  .bubbleButton {\n    height: 3em;\n    line-height: 12px;\n    border-radius: 40px;\n    width: 5em;\n    padding: 0; } }\n\nhtml {\n  position: relative;\n  min-height: 100%; }\n\nbody {\n  font-family: Montserrat, Helvetica, Arial;\n  margin-bottom: 80px;\n  background-color: #4ccede; }\n\n.about h3 {\n  text-align: center;\n  margin: 2em; }\n\n.home {\n  text-align: center; }\n\n.image-container {\n  width: 80%;\n  max-width: 400px;\n  margin: 4em auto; }\n  .image-container img {\n    width: 100%; }\n\n/********************  QUESTIONNAIRE ******************/\n.questionnaire {\n  background-color: #4CCEDE; }\n  .questionnaire .slick-prev {\n    left: -45px; }\n  .questionnaire .slick-prev:before, .questionnaire .slick-next:before {\n    color: #D5E739;\n    font-size: 40px; }\n  .questionnaire .slick-initialized {\n    min-height: 85%;\n    padding: 20px 0; }\n    .questionnaire .slick-initialized .slick-slide {\n      padding: 20px; }\n      .questionnaire .slick-initialized .slick-slide .Qbubble {\n        border: 2px solid #D5E739;\n        border-radius: 50%;\n        width: 2em;\n        height: 2em;\n        margin: 0 auto 20px auto; }\n        .questionnaire .slick-initialized .slick-slide .Qbubble .Qnumber {\n          color: #D5E739;\n          font-weight: 700;\n          text-align: center;\n          margin-top: 2px; }\n\n.Qname {\n  text-align: center; }\n\n.slider-label {\n  position: relative;\n  top: 3vh;\n  display: block;\n  background-color: #167378;\n  color: white;\n  border-radius: 3px;\n  text-align: center; }\n\n/****************** RANGE SLIDER ***********************/\n*, *:before, *:after {\n  box-sizing: border-box; }\n\n.range-slider {\n  margin: 60px 0 0 0%; }\n\n.range-slider {\n  width: 100%; }\n\n.range-slider__range {\n  -webkit-appearance: none;\n  width: calc(100% - (73px));\n  height: 10px;\n  border-radius: 5px;\n  background: #d7dcdf;\n  outline: none;\n  padding: 0;\n  margin: 0; }\n  .range-slider__range::-webkit-slider-thumb {\n    appearance: none;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2c3e50;\n    cursor: pointer;\n    transition: background .15s ease-in-out; }\n    .range-slider__range::-webkit-slider-thumb:hover {\n      background: #167378; }\n  .range-slider__range:active::-webkit-slider-thumb {\n    background: #167378; }\n  .range-slider__range::-moz-range-thumb {\n    width: 20px;\n    height: 20px;\n    border: 0;\n    border-radius: 50%;\n    background: #2c3e50;\n    cursor: pointer;\n    transition: background .15s ease-in-out; }\n    .range-slider__range::-moz-range-thumb:hover {\n      background: #167378; }\n  .range-slider__range:active::-moz-range-thumb {\n    background: #167378; }\n\n.range-slider__value {\n  display: inline-block;\n  position: relative;\n  width: 60px;\n  color: #fff;\n  line-height: 20px;\n  text-align: center;\n  border-radius: 3px;\n  background: #2c3e50;\n  padding: 5px 10px;\n  margin-left: 8px; }\n  .range-slider__value:after {\n    position: absolute;\n    top: 8px;\n    left: -7px;\n    width: 0;\n    height: 0;\n    border-top: 7px solid transparent;\n    border-right: 7px solid #2c3e50;\n    border-bottom: 7px solid transparent;\n    content: ''; }\n\n/*********************** FORM DETAIL *************************/\n::-moz-range-track {\n  background: #d7dcdf;\n  border: 0; }\n\ninput::-moz-focus-inner,\ninput::-moz-focus-outer {\n  border: 0; }\n\n.hidden {\n  display: none; }\n\n.start-button {\n  width: 9em;\n  margin-top: 3em; }\n\n.tab {\n  background-color: #d5e739; }\n\n.tabs .tab a {\n  color: white; }\n\n.tabs .tab a:hover {\n  color: #4ccede; }\n\n.tabs .indicator {\n  background-color: #d5e739; }\n\n.formContainer {\n  margin-top: 3em; }\n\ninput:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {\n  border-bottom: 1px solid #d5e739;\n  box-shadow: 0 1px 0 0 #d5e739; }\n\ninput:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {\n  color: #d5e739; }\n\n.input-field label {\n  color: white; }\n\ninput:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {\n  border-bottom: 1px solid white; }\n\n.disability-question {\n  color: white; }\n\nlabel {\n  color: white; }\n\n.logo-container {\n  margin: none;\n  width: 100%; }\n  .logo-container img {\n    width: 300%;\n    height: 100%; }\n\n.about-container {\n  padding: 2em;\n  height: 100%;\n  text-align: center;\n  color: white;\n  margin-top: 2em; }\n\n.youthButton {\n  background-color: #d5e739;\n  width: 9em;\n  padding: 0; }\n\n.buttonCol {\n  width: 10em;\n  display: inline-block; }\n\n.buttonMenu {\n  margin: inherit; }\n\n.buttonBottom {\n  background-color: #d5e739;\n  width: 4em; }\n\n.leqButtons {\n  position: fixed;\n  bottom: 0;\n  padding: 0px 80px 40px; }\n\n@media only screen and (max-width: 450px) {\n  .leqButtons {\n    position: fixed;\n    bottom: 0;\n    padding: 1px 1px 1px 1px; } }\n", ""]);
 
 	// exports
 
@@ -28260,7 +28260,7 @@
 	      secondTab: 'hidden',
 	      thirdTab: 'hidden',
 	      fourthTab: 'hidden',
-	      resultStatus: 'now',
+	      resultStatus: 'before',
 	      buttonStatus: 'live',
 	      questionStatus: 'hidden',
 	      oldResults: {
@@ -28274,14 +28274,14 @@
 	        "Self-Confidence": 10
 	      },
 	      results: {
-	        "Time Management": 16,
-	        "Social Competence": 16,
-	        "Achievement Motivation": 16,
-	        "Intellectual Flexibility": 16,
-	        "Task Leadership": 16,
-	        "Emotional Control": 16,
-	        "Active Initiative": 16,
-	        "Self-Confidence": 16
+	        "Time Management": 0,
+	        "Social Competence": 0,
+	        "Achievement Motivation": 0,
+	        "Intellectual Flexibility": 0,
+	        "Task Leadership": 0,
+	        "Emotional Control": 0,
+	        "Active Initiative": 0,
+	        "Self-Confidence": 0
 	      }
 	    };
 	    _this.handleChange = _this.handleChange.bind(_this);
@@ -28291,19 +28291,16 @@
 	  _createClass(Home, [{
 	    key: 'changeTabs',
 	    value: function changeTabs() {
-	      console.log('function run');
 	      this.setState({
 	        tab1: false,
 	        tab2: false,
 	        tab3: true,
 	        tab4: false
 	      });
-	      console.log(this.state);
 	    }
 	  }, {
 	    key: 'showFirstTab',
 	    value: function showFirstTab() {
-	      console.log('first tab');
 	      this.setState({
 	        firstTab: 'live',
 	        secondTab: 'hidden',
@@ -28434,7 +28431,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.state);
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'container' },
@@ -28593,29 +28589,33 @@
 	              'div',
 	              { className: this.state.thirdTab },
 	              _react2.default.createElement(
-	                'div',
-	                { className: 'renderResults' },
-	                this.renderResults()
+	                _reactMaterialize.Col,
+	                { s: 10, m: 10, l: 10, offset: 's1 m1 l1' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'renderResults' },
+	                  this.renderResults()
+	                )
 	              ),
 	              _react2.default.createElement(
-	                'div',
-	                { className: 'buttonBottom' },
+	                _reactMaterialize.Col,
+	                { s: 1, m: 1, l: 1 },
 	                _react2.default.createElement(
-	                  _reactMaterialize.Button,
-	                  { floating: true, fab: 'vertical', icon: 'mode_edit', className: 'red', large: true, style: { bottom: '45px', right: '24px' } },
+	                  'div',
+	                  { className: 'leqButtons' },
 	                  _react2.default.createElement(
 	                    _reactMaterialize.Button,
-	                    { floating: true, onClick: this.showBefore.bind(this), className: 'buttonBottom' },
+	                    { floating: true, waves: 'light', onClick: this.showBefore.bind(this), className: 'buttonBottom' },
 	                    'BEFORE'
 	                  ),
 	                  _react2.default.createElement(
 	                    _reactMaterialize.Button,
-	                    { floating: true, onClick: this.showNow.bind(this), className: 'buttonBottom' },
+	                    { floating: true, waves: 'light', onClick: this.showNow.bind(this), className: 'buttonBottom' },
 	                    'NOW'
 	                  ),
 	                  _react2.default.createElement(
 	                    _reactMaterialize.Button,
-	                    { floating: true, onClick: this.showAll.bind(this), className: 'buttonBottom' },
+	                    { floating: true, waves: 'light', onClick: this.showAll.bind(this), className: 'buttonBottom' },
 	                    'ALL'
 	                  )
 	                )
@@ -33185,7 +33185,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'h5',
-	            null,
+	            { className: 'Qname' },
 	            question.name
 	          ),
 	          _react2.default.createElement(_Range2.default, { changeState: _this2.props.changeState, leqFactor: question.factor })
